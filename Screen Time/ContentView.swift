@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     @State var presentingModal = false
+    @State var showEnter = false
     @State var shiftButton = -40.0
     @State var showList = false
     @State var co = Color.white
@@ -39,9 +40,11 @@ struct ContentView: View {
                 
                 if showList{
                     VStack {
-                        ItemCell(item: "One More Minute")
+                        ItemCell()
                         HStack(alignment: .center) {
-                            Button("Enter Screen Time Passcode") { self.presentingModal = true }
+                            Button("Enter Screen Time Passcode") {
+                                self.presentingModal = true
+                            }
                             .sheet(isPresented: $presentingModal) { PasswordView(presentedAsModal: self.$presentingModal) }
                         }.font(.body)
                             .offset(y: -107)
@@ -54,6 +57,9 @@ struct ContentView: View {
                         }
                         .offset(y: -75)
                     }
+                }
+                if t.data {
+                    fakeCell()
                 }
                 Button("Ask For More Time") {
                     withAnimation {
@@ -76,8 +82,6 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 struct ItemCell: View {
-    
-    var item: String
     var body: some View {
         
         VStack {

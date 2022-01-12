@@ -16,6 +16,7 @@
 		FECA8E43278E9DE200928EFD /* Screen_TimeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECA8E42278E9DE200928EFD /* Screen_TimeUITestsLaunchTests.swift */; };
 		FECA8E50278E9E1D00928EFD /* DummyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECA8E4F278E9E1D00928EFD /* DummyView.swift */; };
 		FECA8E52278EA21100928EFD /* PasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECA8E51278EA21100928EFD /* PasswordView.swift */; };
+		FECA8E54278F505100928EFD /* Stor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECA8E53278F505100928EFD /* Stor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		FECA8E42278E9DE200928EFD /* Screen_TimeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen_TimeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		FECA8E4F278E9E1D00928EFD /* DummyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyView.swift; sourceTree = "<group>"; };
 		FECA8E51278EA21100928EFD /* PasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordView.swift; sourceTree = "<group>"; };
+		FECA8E53278F505100928EFD /* Stor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 				FECA8E25278E9DE100928EFD /* Screen_TimeApp.swift */,
 				FECA8E27278E9DE100928EFD /* ContentView.swift */,
 				FECA8E51278EA21100928EFD /* PasswordView.swift */,
+				FECA8E53278F505100928EFD /* Stor.swift */,
 				FECA8E4F278E9E1D00928EFD /* DummyView.swift */,
 				FECA8E29278E9DE200928EFD /* Assets.xcassets */,
 				FECA8E2B278E9DE200928EFD /* Preview Content */,
@@ -265,6 +268,7 @@
 			files = (
 				FECA8E28278E9DE100928EFD /* ContentView.swift in Sources */,
 				FECA8E50278E9E1D00928EFD /* DummyView.swift in Sources */,
+				FECA8E54278F505100928EFD /* Stor.swift in Sources */,
 				FECA8E26278E9DE100928EFD /* Screen_TimeApp.swift in Sources */,
 				FECA8E52278EA21100928EFD /* PasswordView.swift in Sources */,
 			);
