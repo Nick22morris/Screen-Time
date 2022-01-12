@@ -30,8 +30,10 @@ struct PasswordView: View {
                 Text("Enter Passcode")
                     .bold()
                     .padding()
+                    .offset(x: 45)
                 Spacer()
                 Button("Cancel") { self.presentedAsModal = false }
+                
                 .padding()
                 
             }
