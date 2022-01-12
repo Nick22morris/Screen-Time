@@ -13,6 +13,7 @@ struct PasswordView: View {
     }
     @FocusState private var focusedField: FocusField?
     @FocusState private var nameIsFocused: Bool
+    @Binding var showEnter: Bool
     @State var myColor = Color.white
     @State var approved = false
     @Binding var presentedAsModal: Bool
@@ -123,9 +124,8 @@ struct PasswordView: View {
             ]
             hideKeyboard()
             approved = true
-            myColor = Color.gray
             presentedAsModal = false
-            t.data = true
+            showEnter = true
         }
         
     }

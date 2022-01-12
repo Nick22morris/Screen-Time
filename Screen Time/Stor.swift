@@ -6,9 +6,13 @@
 //
 
 import Foundation
+import SwiftUI
 
 let t = Store()
 
-class Store {
-    var data = false
+struct Store {
+    @State var data = false
+    func tog() {
+        data.toggle()
+    }
 }

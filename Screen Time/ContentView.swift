@@ -12,6 +12,7 @@ struct ContentView: View {
     @State var showEnter = false
     @State var shiftButton = -40.0
     @State var showList = false
+    @State var opa = 1.0
     @State var co = Color.white
     var body: some View {
         ZStack {
@@ -41,11 +42,15 @@ struct ContentView: View {
                 if showList{
                     VStack {
                         ItemCell()
+                            .opacity(opa)
                         HStack(alignment: .center) {
                             Button("Enter Screen Time Passcode") {
                                 self.presentingModal = true
+                                opa = 0.0
+                                co = Color.white
+                                shiftButton = -40
                             }
-                            .sheet(isPresented: $presentingModal) { PasswordView(presentedAsModal: self.$presentingModal) }
+                            .sheet(isPresented: $presentingModal) { PasswordView(showEnter: self.$showEnter, presentedAsModal: self.$presentingModal) }
                         }.font(.body)
                             .offset(y: -107)
                         Button("Cancel") {
@@ -53,12 +58,14 @@ struct ContentView: View {
                                 showList.toggle()
                                 co = Color.white
                                 shiftButton = -40
+                                
                             }
                         }
+                        .opacity(opa)
                         .offset(y: -75)
                     }
                 }
-                if t.data {
+                if showEnter {
                     fakeCell()
                 }
                 Button("Ask For More Time") {
