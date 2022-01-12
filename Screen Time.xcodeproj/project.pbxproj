@@ -14,6 +14,8 @@
 		FECA8E37278E9DE200928EFD /* Screen_TimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECA8E36278E9DE200928EFD /* Screen_TimeTests.swift */; };
 		FECA8E41278E9DE200928EFD /* Screen_TimeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECA8E40278E9DE200928EFD /* Screen_TimeUITests.swift */; };
 		FECA8E43278E9DE200928EFD /* Screen_TimeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECA8E42278E9DE200928EFD /* Screen_TimeUITestsLaunchTests.swift */; };
+		FECA8E50278E9E1D00928EFD /* DummyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECA8E4F278E9E1D00928EFD /* DummyView.swift */; };
+		FECA8E52278EA21100928EFD /* PasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECA8E51278EA21100928EFD /* PasswordView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		FECA8E3C278E9DE200928EFD /* Screen TimeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Screen TimeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FECA8E40278E9DE200928EFD /* Screen_TimeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen_TimeUITests.swift; sourceTree = "<group>"; };
 		FECA8E42278E9DE200928EFD /* Screen_TimeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen_TimeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FECA8E4F278E9E1D00928EFD /* DummyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyView.swift; sourceTree = "<group>"; };
+		FECA8E51278EA21100928EFD /* PasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,8 @@
 			children = (
 				FECA8E25278E9DE100928EFD /* Screen_TimeApp.swift */,
 				FECA8E27278E9DE100928EFD /* ContentView.swift */,
+				FECA8E51278EA21100928EFD /* PasswordView.swift */,
+				FECA8E4F278E9E1D00928EFD /* DummyView.swift */,
 				FECA8E29278E9DE200928EFD /* Assets.xcassets */,
 				FECA8E2B278E9DE200928EFD /* Preview Content */,
 			);
@@ -258,7 +264,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FECA8E28278E9DE100928EFD /* ContentView.swift in Sources */,
+				FECA8E50278E9E1D00928EFD /* DummyView.swift in Sources */,
 				FECA8E26278E9DE100928EFD /* Screen_TimeApp.swift in Sources */,
+				FECA8E52278EA21100928EFD /* PasswordView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
